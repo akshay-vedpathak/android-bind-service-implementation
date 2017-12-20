@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cs478.akshay.fedcash.FedCash">
+
+    <TextView
+        android:id="@+id/make_a_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_option"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:layout_margin="20px"
+        android:id="@+id/choices"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Year"/>
+
+        <EditText
+            android:id="@+id/month"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Month"
+            />
+
+        <EditText
+            android:id="@+id/day"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Day"
+            />
+
+        <EditText
+            android:id="@+id/working_days"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Working Days"/>
+
+        <Button
+            android:id="@+id/submit_query"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Submit Query" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/unbind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unbind Treasury Service" />
+
+    <Button
+        android:id="@+id/view_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View History" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="Output from Treasury Service" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

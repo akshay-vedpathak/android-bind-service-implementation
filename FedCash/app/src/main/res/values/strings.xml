@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FedCash</string>
+    <string name="select_option">Welcome to FedCash! Select an option from below to query</string>
+    <string-array name="choices">
+        <item>Select an option</item>
+        <item>Get monthly cash details for a year</item>
+        <item>Get daily cash details</item>
+        <item>Get yearly cash average for a year</item>
+    </string-array>
+</resources>
